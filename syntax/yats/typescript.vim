@@ -1,5 +1,5 @@
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Atomics
-syntax keyword typescriptGlobal containedin=typescriptIdentifierName Function Boolean
+syntax keyword typescriptGlobal containedin=typescriptIdentifierName Function Boolean BigInt
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Error EvalError
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName InternalError
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName RangeError ReferenceError
@@ -17,6 +17,7 @@ syntax keyword typescriptGlobal containedin=typescriptIdentifierName SharedArray
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName ArrayBuffer DataView
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Iterator Generator
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Reflect Proxy
+syntax keyword typescriptGlobal containedin=typescriptIdentifierName WeakRef
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName arguments
 if exists("did_typescript_hilink") | HiLink typescriptGlobal Structure
 endif
