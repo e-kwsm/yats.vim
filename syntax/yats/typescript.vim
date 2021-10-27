@@ -1,3 +1,4 @@
+syntax keyword typescriptGlobal containedin=typescriptIdentifierName Atomics
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Function Boolean
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Error EvalError
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName InternalError
@@ -12,6 +13,7 @@ syntax keyword typescriptGlobal containedin=typescriptIdentifierName Int8Array U
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Uint32Array Uint8Array
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Uint8ClampedArray
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName ParallelArray
+syntax keyword typescriptGlobal containedin=typescriptIdentifierName SharedArrayBuffer
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName ArrayBuffer DataView
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Iterator Generator
 syntax keyword typescriptGlobal containedin=typescriptIdentifierName Reflect Proxy
