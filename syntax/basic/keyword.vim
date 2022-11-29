@@ -1,7 +1,7 @@
 "Import
 syntax keyword typescriptImport                from as
 syntax keyword typescriptImport                import
-  \ nextgroup=typescriptImportType,typescriptTypeBlock
+  \ nextgroup=typescriptImportType,typescriptTypeBlock,typescriptDefaultImportName
   \ skipwhite
 syntax keyword typescriptImportType            type
   \ contained
@@ -13,10 +13,9 @@ syntax match typescriptExportType              /\<type\s*{\@=/
 syntax keyword typescriptModule                namespace module
 
 
-syntax keyword typescriptCastKeyword           as
+syntax keyword typescriptCastKeyword           as satisfies
   \ nextgroup=@typescriptType
   \ skipwhite
-
 
 syntax keyword typescriptVariable              let var
   \ nextgroup=@typescriptVariableDeclarations
@@ -86,6 +85,11 @@ syntax cluster typescriptAmbients contains=
   \ typescriptModule
 
 syntax keyword typescriptIdentifier            arguments  nextgroup=@afterIdentifier
+syntax match typescriptDefaultImportName /\v\h\k*( |,)/
+  \ contained
+  \ nextgroup=typescriptTypeBlock
+  \ skipwhite skipempty
+
 syntax region  typescriptTypeBlock
   \ matchgroup=typescriptBraces
   \ start=/{/ end=/}/
